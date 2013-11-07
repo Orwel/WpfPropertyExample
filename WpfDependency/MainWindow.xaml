@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfDependency.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:t="clr-namespace:WpfDependency"
+        Title="MainWindow" Height="350" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!--Row 0-->
+        <t:TextBase x:Name="TextBase00" Grid.Row="0" Grid.Column="0"/>
+        <t:TextBase x:Name="TextBase01" Grid.Row="0" Grid.Column="1"/>
+        <TextBlock x:Name="TextBlock02" Grid.Row="0" Grid.Column="2"/>
+        <TextBlock x:Name="TextBlock03" Grid.Row="0" Grid.Column="3"/>
+        <!--Row 1-->
+        <t:TextBasePlus x:Name="TextBasePlus10" Grid.Row="1" Grid.Column="0"/>
+        <t:TextBasePlus x:Name="TextBasePlus11" Grid.Row="1" Grid.Column="1"/>
+        <t:TextAdvanced x:Name="TextAdvanced12" Grid.Row="1" Grid.Column="2"/>
+        <t:TextAdvanced x:Name="TextAdvanced13" Grid.Row="1" Grid.Column="3"/>
+        <!--Row 2-->
+        <t:TextAdvancedPlus x:Name="TextAdvancedPlus22" Grid.Row="2" Grid.Column="2"/>
+        <t:TextAdvancedPlus x:Name="TextAdvancedPlus23" Grid.Row="2" Grid.Column="3"/>
+    </Grid>
+</Window>
